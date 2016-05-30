@@ -27,9 +27,16 @@
             android:name="PantallaInicio"
             android:label="Inicio" />
         <activity
+            android:name="Reproducir"
+            android:label="Repro" />
+        <activity
+            android:name="UserLogin"
+            android:label="Login" />
+        <activity
             android:name="AcercaDe"
             android:label="AcercaDe"
-            android:theme="@android:style/Theme.Dialog" android:multiprocess="true">
+            android:multiprocess="true"
+            android:theme="@android:style/Theme.Dialog" >
         </activity>
     </application>
 

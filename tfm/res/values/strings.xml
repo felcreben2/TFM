@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="ip">X.X.X.X</string>
     <string name="app_name">tfm</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -11,6 +12,15 @@
     <string name="user">Inicio sesión</string>
     <string name="register">Registrar</string>
     <string name="back">Volver</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="appLabel">TIT?</string>
+    <string name="hintEditTextWords">TIT2</string>
+    <string name="strBtnEnglish">TIT3</string>
+    <string name="strBtnSpanish">TIT4</string>
     
+    
+       
 
 </resources>

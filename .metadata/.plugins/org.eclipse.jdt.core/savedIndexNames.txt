@@ -1,6 +1,0 @@
-INDEX VERSION 1.126+C:\Users\Usuario\Documents\GitHub\TFM\.metadata\.plugins\org.eclipse.jdt.core
-3515282563.index
-1398683494.index
-1703608320.index
-4089675342.index
-1734846545.index

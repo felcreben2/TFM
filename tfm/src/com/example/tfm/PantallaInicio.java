@@ -64,12 +64,12 @@ public class PantallaInicio extends Activity {
 	}
 
 	public void launchUserLogin(View view) {
-		Intent i = new Intent(this, PantallaInicio.class);
+		Intent i = new Intent(this, UserLogin.class);
 		startActivity(i);
 	}
 
 	public void launchRegister(View view) {
-		Intent i = new Intent(this, PantallaInicio.class);
+		Intent i = new Intent(this, Reproducir.class);
 		startActivity(i);
 	}
 	public void launchAcercaDe(View view) {
