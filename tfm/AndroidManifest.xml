@@ -1,43 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tfm"
+<manifest package="com.example.tfm"
     android:installLocation="preferExternal"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<uses-permission android:name="android.permission.INTERNET"/>
 
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.CALL_PHONE"/>
+
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="21" />
 
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name=".DrawableActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="PantallaInicio"
-            android:label="Inicio" />
-        <activity
-            android:name="Reproducir"
-            android:label="Repro" />
-        <activity
-            android:name="UserLogin"
-            android:label="Login" />
-        <activity
-            android:name="AcercaDe"
-            android:label="AcercaDe"
-            android:multiprocess="true"
-            android:theme="@android:style/Theme.Dialog" >
-        </activity>
-    </application>
 
+-<application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:allowBackup="true">
+
+
+-<activity android:label="@string/app_name" android:name=".DrawableActivity">
+
+
+-<intent-filter>
+
+<action android:name="android.intent.action.MAIN"/>
+
+<category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+
+</activity>
+
+<activity android:label="Inicio" android:name="PantallaInicio"/>
+
+<activity android:label="Repro" android:name="Reproducir"/>
+
+<activity android:label="Login" android:name="UserLogin"/>
+
+<activity android:theme="@android:style/Theme.Dialog" android:label="AcercaDe" android:name="AcercaDe" android:multiprocess="true"> </activity>
+<activity android:name="ListPacientes"></activity>
+<activity android:name="Pacientes"></activity>
+<activity android:name="Register"></activity>
+<activity android:name="DetailsPaciente"></activity>
+<activity android:name="ListNotificacion"></activity>
+<activity android:name="Grafica"></activity>
+<activity android:name="Grafica2"></activity>
+<activity android:name="Grafica3"></activity>
+<activity android:name="Grafica4"></activity>
+<activity android:name="Graficatu"></activity>
+<activity android:name="Grafica2tu"></activity>
+<activity android:name="Grafica3tu"></activity>
+<activity android:name="Grafica4tu"></activity>
+<activity android:name="Sensor"></activity>
+<activity android:name="VistaP"></activity> 
+<activity android:name="ListaPulsaciones"></activity> 
+<activity android:name="Programar"></activity> 
+<activity android:name="ListaOxigeno"></activity> 
+<activity android:name="ListaTemp"></activity> 
+<activity android:name="ListaPulsaciones2"></activity> 
+<activity android:name="ListaOxigeno2"></activity> 
+<activity android:name="ListaTemp2"></activity> 
+<service android:name="Servicio"></service>
+<service android:name="ServicioTutor"></service>
+<receiver android:name=".NotificationPublisher" />
+<activity android:theme="@android:style/Theme.Dialog" android:label="Notificacion" android:name="Notificacion" android:multiprocess="true"> </activity>
+<activity android:theme="@android:style/Theme.Dialog" android:label="Error" android:name="Error" android:multiprocess="true"> </activity>
+
+</application>
 </manifest>
